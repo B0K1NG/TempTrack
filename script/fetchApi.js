@@ -1,5 +1,5 @@
 const getWeatherData = async (city) => {
-    const url = `https://api.meteo.lt/v1/places/${city}`;
+    const url = `https://api.meteo.lt/v1/places/${city}/forecasts/long-term`;
     const options = {
         method: 'GET',
         headers: {
