@@ -1,9 +1,9 @@
 const showWeatherData = (weatherData) => {
-  document.getElementById('cityName').innerText = weatherData.name;
-  document.getElementById('weatherType').innerText = weatherData.weather[0].main;
-  document.getElementById('temp').innerText = weatherData.main.temp;
-  document.getElementById('min-temp').innerText = weatherData.main.temp_min;
-  document.getElementById('max-temp').innerText = weatherData.main.temp_max;
+  document.getElementById('cityName').innerText = weatherData.place.name;
+  document.getElementById('weatherType').innerText = weatherData.forecastTimestamps[0]?.conditionCode || 'N/A';
+  document.getElementById('temp').innerText = weatherData.forecastTimestamps[0]?.airTemperature || 'N/A';
+  document.getElementById('feels-like').innerText = weatherData.forecastTimestamps[0]?.feelsLikeTemperature || 'N/A';
+  document.getElementById('sea-level-pressure').innerText = weatherData.forecastTimestamps[0]?.seaLevelPressure || 'N/A';
 };
 
 export { showWeatherData }
