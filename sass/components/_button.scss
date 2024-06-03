@@ -1,0 +1,11 @@
+.button {
+    &__btn {
+        margin-top: 1rem;
+        width: 50%;
+        background-color: aquamarine;
+        border: $border;
+        border-radius: $border-radius;
+        cursor: $hover;
+        margin-left: 3.3rem;
+    };
+};

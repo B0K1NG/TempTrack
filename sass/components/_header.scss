@@ -1,0 +1,8 @@
+.header {
+    &__title {
+        text-transform: uppercase;
+        font-size: 1.6rem;
+        text-align: $align;
+        padding-top: 10em;
+    };
+};

@@ -2,11 +2,12 @@
 @import './base/base';
 
 // Component imports
-
+@import './components/button';
+@import './components/header';
+@import './components/input';
+@import './components/output';
+@import './components/output__info';
 
 // Utilities imports
 @import './utilities/mixins';
 @import './utilities/variables';
-
-//Responsive imports
-@import './responsive';

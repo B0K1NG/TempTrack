@@ -1,0 +1,10 @@
+@import './variables';
+
+@mixin gridy($display: grid) {
+    display: $display;
+    justify-content: $align;
+    align-items: $align;
+    background-color: $background-color;
+    color: $color;
+    margin: $margin;
+}

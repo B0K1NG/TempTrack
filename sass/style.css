@@ -1,0 +1,52 @@
+body {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(35, 100, 122);
+  color: white;
+  margin: 0 auto;
+}
+
+.button__btn {
+  margin-top: 1rem;
+  width: 50%;
+  background-color: aquamarine;
+  border: 1px solid white;
+  border-radius: 1rem;
+  cursor: pointer;
+  margin-left: 3.3rem;
+}
+
+.header__title {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  text-align: center;
+  padding-top: 10em;
+}
+
+.input {
+  margin-left: 1.4rem;
+}
+
+.output {
+  text-align: center;
+}
+.output__city {
+  text-transform: uppercase;
+}
+.output__weather {
+  font-size: 1.3rem;
+  text-transform: capitalize;
+}
+.output__info {
+  list-style: none;
+}
+
+.output__info {
+  list-style: none;
+  text-align: center;
+}
+.output__info__temp {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}/*# sourceMappingURL=style.css.map */
