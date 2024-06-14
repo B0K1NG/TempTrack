@@ -1,9 +1,16 @@
-const showWeatherData = (weatherData) => {
-  document.getElementById('cityName').innerText = weatherData.place.name;
-  document.getElementById('weatherType').innerText = weatherData.forecastTimestamps[0]?.conditionCode || 'N/A';
-  document.getElementById('temp').innerText = weatherData.forecastTimestamps[0]?.airTemperature || 'N/A';
-  document.getElementById('feels-like').innerText = weatherData.forecastTimestamps[0]?.feelsLikeTemperature || 'N/A';
-  document.getElementById('sea-level-pressure').innerText = weatherData.forecastTimestamps[0]?.seaLevelPressure || 'N/A';
+const showWeatherData = ({place, forecastTimestamps}) => {
+  const {
+    conditionCode = 'N/A',
+    airTemperature = 'N/A',
+    feelsLikeTemperature = 'N/A',
+    seaLevelPressure = 'N/A',
+  } = forecastTimestamps[0] || {};
+
+  document.getElementById('cityName').innerText = place.name;
+  document.getElementById('weatherType').innerText = conditionCode;
+  document.getElementById('temp').innerText = airTemperature;
+  document.getElementById('feels-like').innerText = feelsLikeTemperature;
+  document.getElementById('sea-level-pressure').innerText = seaLevelPressure;
 };
 
 export { showWeatherData }
